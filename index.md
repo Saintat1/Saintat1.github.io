@@ -2,6 +2,18 @@
 layout: default
 ---
 
+## [](#header-2) 2017-03-08
+
+**To do list**
+1. mail tax return documents this morning.
+2. Fix eod daily report logic.
+3. <<Option Theory>> Chapter one p1 - p11.
+4. Old Friends 2.
+5. workout for 30 minutes.
+6. keep in touch with friends.
+
+(paranoid, fluffed, ammunition, twirly, dreading, stomped, doy, lasagne, presumably, mastodon, cruel, chaotic, sonogram, altar, chubby, anecdotes, dumped, steer, gagging, roll with punches, tanned, maid of honour, wind up, tilt, welling up, hireline)
+
 ## [](#header-2) 2017-02-03
 
 First day here using gitpage, I'll wirte my diary here from today.
