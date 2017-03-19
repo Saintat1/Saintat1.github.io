@@ -86,7 +86,7 @@ Logfile is under /var/log/supervisor
 
 Use
 
-```python
+```bash
 fab build
 fab deploy
 ```
