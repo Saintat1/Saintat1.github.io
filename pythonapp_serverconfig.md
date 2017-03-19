@@ -11,7 +11,7 @@ layout: default
 <p>openssh-server: SSH service</p>
 <p>gunicorn: support gevent</p>
 <p>Nginx: Web Server</p>
-<p>python-gevent: 同步变异步协程</p>
+<p>python-gevent: 同步变异步协程()</p>
 <p>python-jinja2</p>
 <p>python-mysql.connector</p>
 <p>python-mysql.connector</p>
