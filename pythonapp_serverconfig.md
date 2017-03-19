@@ -2,6 +2,8 @@
 layout: default
 ---
 
+[back](./)
+
 ## Server Configuration
 
 ### Ubuntu, make sure you have installed the following( Use sudo apt-get install openssh-server):
@@ -42,7 +44,7 @@ server {
     access_log /srv/awesome/log/access_log;
     error_log  /srv/awesome/log/error_log;
 
-    # server_name awesome.liaoxuefeng.com;
+    server_name you.server.address;
 
     client_max_body_size 1m;
 
@@ -87,8 +89,10 @@ Logfile is under /var/log/supervisor
 ```python
 fab build
 fab deploy
-
 ```
 
+to rebuild and deploy
+
 </p>
+
 [back](./)
