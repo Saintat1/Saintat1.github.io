@@ -84,7 +84,7 @@ Logfile is under /var/log/supervisor
 
 ### Deploy
 
-<p>Use
+Use
 
 ```python
 fab build
@@ -93,6 +93,6 @@ fab deploy
 
 to rebuild and deploy
 
-</p>
+
 
 [back](./)
