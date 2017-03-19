@@ -17,6 +17,7 @@ layout: default
 <p>python-mysql.connector</p>
 <p>Mysql Server and Client</p>
 
+
 ```bash
 # Ruby code with syntax highlighting
 sudo apt-get purge mysql-client-core-5.6
@@ -26,12 +27,17 @@ sudo apt-get install mysql-client-core-5.5
 sudo apt-get install mysql-server 
 ```
 
+
 ```ruby
 # Ruby code with syntax highlighting
 GitHubPages::Dependencies.gems.each do |gem, version|
   s.add_dependency(gem, "= #{version}")
 end
 ```
+
+
+
+
 
 ### Registration: 
 1. Launch a new instance, choose viture machine, here I used ubuntu 14.04 AMI, got a xxx.pem file after registration, keep it in a safe place, this file is like a key for login, and you can not download it again if you lose it.
