@@ -17,13 +17,20 @@ layout: default
 <p>python-mysql.connector</p>
 <p>Mysql Server and Client</p>
 
-```ruby
+```bash
 # Ruby code with syntax highlighting
 sudo apt-get purge mysql-client-core-5.6
 sudo apt-get autoremove
 sudo apt-get autoclean
 sudo apt-get install mysql-client-core-5.5
 sudo apt-get install mysql-server 
+```
+
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
 ```
 
 ### Registration: 
