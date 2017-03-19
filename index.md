@@ -3,7 +3,11 @@ layout: default
 ---
 **Reading Notes**
 
-Option Theory : [Link to another page](readnote_OptionTheory).
+[Option Theory](readnote_OptionTheory).
+
+**Python-webapp Development**
+
+[AWS Configuration](pythonapp_awsconfig).
 
 ## [](#header-2) 2017-03-09
 
