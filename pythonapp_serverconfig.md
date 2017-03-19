@@ -15,7 +15,7 @@ layout: default
 <p>python-jinja2</p>
 <p>python-mysql.connector</p>
 <p>python-mysql.connector</p>
-<p>Mysql Server and Client
+<p>Mysql Server and Client</p>
 
 ```ruby
 # Ruby code with syntax highlighting
@@ -25,7 +25,6 @@ sudo apt-get autoclean
 sudo apt-get install mysql-client-core-5.5
 sudo apt-get install mysql-server 
 ```
-</p>
 
 ### Registration: 
 1. Launch a new instance, choose viture machine, here I used ubuntu 14.04 AMI, got a xxx.pem file after registration, keep it in a safe place, this file is like a key for login, and you can not download it again if you lose it.
