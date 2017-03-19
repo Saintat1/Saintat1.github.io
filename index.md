@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+**Reading Notes**
+
+Option Theory : [Link to another page](readnote_OptionTheory).
+
 ## [](#header-2) 2017-03-09
 
 
