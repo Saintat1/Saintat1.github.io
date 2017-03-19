@@ -91,7 +91,7 @@ fab build
 fab deploy
 ```
 
-to rebuild and deploy
+to rebuild and deploy, see details at https://segmentfault.com/a/1190000000497630
 
 
 
