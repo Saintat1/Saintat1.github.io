@@ -9,6 +9,10 @@ layout: default
 
 [AWS Configuration](pythonapp_awsconfig).
 
+[Server Configuration](pythonapp_serverconfig).
+
+[Web App](pythonapp_webdesign).
+
 ## [](#header-2) 2017-03-19
 1.workout 30 minutes.
 
