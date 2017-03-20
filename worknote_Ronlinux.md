@@ -1,5 +1,5 @@
-Run R script on Linux with cron tab
-Install r on linux： 
+1. Run R script on Linux with cron tab
+2. Install r on linux： 
  - add "deb http://stat.ethz.ch/CRAN/bin/linux/ubuntu trusty/" and "deb https://<my.favorite.ubuntu.mirror>/ trusty-backports main restricted universe" to /etc/apt/sources.list file
 
  - $sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
@@ -10,7 +10,7 @@ Install r on linux：
 
  - $sudo apt-get install r-base-dev
 
-Use crontab to run scheduled task:
+3. Use crontab to run scheduled task:
 
  - Put your own r script under a folder, e.g. /ect/rcronjob/test.R
  - Creat a test.sh file under the same file, with content,
@@ -39,7 +39,7 @@ Use crontab to run scheduled task:
  ```
  at the bottom of the file, and then save (Ctrl+X), and everything is done.
 
-命令格式： "crontab [-u user] file crontab [-u user] [-e|-l|-r]"
+4. 命令格式： "crontab [-u user] file crontab [-u user] [-e|-l|-r]"
 
  - user: 用户
  - file: 文件名 
