@@ -84,6 +84,22 @@ Logfile is under /var/log/supervisor
 
 ### Deploy
 
+Local Test: use 
+
+```bash
+python wsgiapp.py
+```
+If port 9000 is occupied, use 
+
+```bash
+netstat -ano
+netstat -aon|findstr "9000"
+tasklist|findstr "4524"
+taskkill /f  /t  /im QQ.exe
+```
+
+to release this port 9000.
+
 Use
 
 ```bash
