@@ -20,12 +20,7 @@
  ```bash
  sudo crontab -e
  ```
- - add
- 
- ```bash
- * * * * * /etc/rcronjob/test.sh
- ```
-
+ - add "* * * * * /etc/rcronjob/test.sh"
  - at the bottom of the file, and then save (Ctrl+X), and everything is done.
 4. 命令格式： "crontab [-u user] file crontab [-u user] [-e|-l|-r]"
  - user: 用户
