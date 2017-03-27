@@ -1,22 +1,22 @@
 # Basic
-title: 潘柏信
-subtitle: 个人站
-description: 欢迎来到我的个人站~
+title: Weihan Li
+subtitle: Personal blog
+description: 
 # 头像里面的标题
-avatarTitle: leopardpan
+avatarTitle: Weihan Li
 # 头像里面的描述
-avatarDesc: iOS / 机器学习
-url: "http://baixin.io"
+avatarDesc: Data Science / Quant
+url: "www.weihanli.com"
 
 # Comment
 comment:
-    # disqus: leopard
-    duoshuo: leopard 
+    disqus: weihanli
+    #duoshuo: leopard 
 
 # Social
 social:
-    weibo: 5366874726 
-    github: leopardpan
+    weibo: Saintat 
+    github: saintat1
     # twitter: 
     mail: leopardpan@icloud.com
 
