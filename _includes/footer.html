@@ -23,6 +23,16 @@
             </a>
           </li>
           {% endif %}
+
+          {% if site.social.linkedin %}
+          <!-- Github -->
+          <li class="navigation__item_social">
+            <a href="https://www.linkedin.com/in/{{site.social.linkedin}}" title="@{{site.social.linkedin}}" target="_blank">
+              <i class='social fa fa-linkedin fa-2x'></i>
+              <span class="label">LinkedIN</span>
+            </a>
+          </li>
+          {% endif %}
           
           {% if site.social.twitter %}
           <!-- Twitter -->
@@ -82,7 +92,7 @@
           <!-- #visit -->
           <span id="busuanzi_container_site_pv">
             total visits
-            <span id="busuanzi_value_site_pv"></span>次
+            <span id="busuanzi_value_site_pv"></span>
           </span>
 
         </div>
