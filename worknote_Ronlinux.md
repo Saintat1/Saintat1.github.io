@@ -1,4 +1,4 @@
-1. Run R script on Linux with cron tab
+**Run R script on Linux with cron tab**
 2. Install r on linux： 
  - add "deb http://stat.ethz.ch/CRAN/bin/linux/ubuntu trusty/" and "deb https://<my.favorite.ubuntu.mirror>/ trusty-backports main restricted universe" to /etc/apt/sources.list file
  - $sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
@@ -29,5 +29,9 @@
  - -l： 显示某个用户的文件内容
  - -r: 从/var/spool/cron目录中删除某个用户的crontab文件
  - -i: 再删除用户的crontab文件时给确认提示
- - <p>输入格式： 分 时 日 月 星期 命令</p>
- - <p>输入格式： * * * * * /etc/rcronjob/test.sh</p>
+ - 输入格式： 分 时 日 月 星期 命令
+ - 输入格式： * * * * * /etc/rcronjob/test.sh
+
+ Rscript /etc/rcronjob/systime.R > /etc/rcronjob/outputFile.txt 2 > /etc/rcronjob/errorFile.txt
+
+ Rscript /home/ubuntu/cron/r/Balday/ERCOT/matching/ERCOT_Balday_matching.R > output.txt 2>>logfile.txt
