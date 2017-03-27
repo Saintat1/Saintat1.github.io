@@ -8,6 +8,8 @@ Currently work in
 , which is an energy trading based financial company.
 <p>
 
+<embed src="/images/CV_Weihan Li.pdf" width="800px" height="2100px" />
+
 推荐一个我维护的 Team 博客
 <a target="_blank" href="http://talkingdata.me/"> voyagelab </a>
 里面有一些关于 iOS 、Android 和 机器学习 的文章。
