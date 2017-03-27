@@ -53,12 +53,12 @@ cover_color: clear
 
 # The blog button should not be removed.
 blog_button:
-    title: 博客主页
+    title: Home
 
 # Navigation buttons in the front page.s
 nav:
     - {title: Blog, description: archive, url: '/archive'}   
-    - {title: tag, description: tags, url: '/tags'}      
+    - {title: Tag, description: tags, url: '/tags'}      
     - {title: About me, description: about, url: '/about'}      
     
 
