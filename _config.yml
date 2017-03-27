@@ -16,7 +16,7 @@ comment:
 # Social
 social:
     weibo: Saintat 
-    github: saintat1
+    github: saintat1;
     # twitter: 
     mail: leopardpan@icloud.com
 
@@ -57,9 +57,9 @@ blog_button:
 
 # Navigation buttons in the front page.s
 nav:
-    - {title: 所有文章, description: archive, url: '/archive'}   
-    - {title: 标签, description: tags, url: '/tags'}      
-    - {title: 关于我, description: about, url: '/about'}      
+    - {title: Blog, description: archive, url: '/archive'}   
+    - {title: tag, description: tags, url: '/tags'}      
+    - {title: About me, description: about, url: '/about'}      
     
 
 # Pagination
