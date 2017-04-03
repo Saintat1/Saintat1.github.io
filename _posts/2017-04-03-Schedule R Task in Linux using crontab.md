@@ -4,7 +4,7 @@ title: Run R Script on Linux with Crontab
 date: 2017-04-03 
 tags: R  
 ---
-### Run R script on Linux with cron tab**
+### Run R script on Linux with cron tab
 2. Install r on linux： 
  - add "deb http://stat.ethz.ch/CRAN/bin/linux/ubuntu trusty/" and "deb https://<my.favorite.ubuntu.mirror>/ trusty-backports main restricted universe" to /etc/apt/sources.list file
  - `$sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9`
