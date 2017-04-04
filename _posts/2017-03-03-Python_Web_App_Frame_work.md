@@ -31,6 +31,7 @@ tags: python
 >* python-mysql.connector
 >* Mysql Server and Client
 
+It's a liitle bit tricky installing MySQL on Ubuntu, try to use the command below:
 
 ```bash
 sudo apt-get purge mysql-client-core-5.6
@@ -40,7 +41,7 @@ sudo apt-get install mysql-client-core-5.5
 sudo apt-get install mysql-server 
 ```
 
-<p>supervisor: linux process management tool，it will restart the process if the process is aborted accidentally.</p>
+>* supervisor: linux process management tool，it will restart the process if the process is aborted accidentally.</p>
 
 
 ### Nginx Configuration
