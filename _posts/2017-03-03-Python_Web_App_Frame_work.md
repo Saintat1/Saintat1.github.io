@@ -24,9 +24,9 @@ tags: python
 ***If you are using Ubuntu, make sure you have installed the following( Use sudo apt-get install openssh-server):***
 >*openssh-server: SSH service
 >*gunicorn: support gevent， WSGI Server
->*Nginx: Web Server</p>
+>*Nginx: Web Server
 >*python-gevent: convert code to asyn version
->*python-jinja2</p>
+>*python-jinja2
 >*python-mysql.connector
 >*python-mysql.connector
 >*Mysql Server and Client
