@@ -21,15 +21,15 @@ tags: python
 
 
 ### Sever Configuration
-***If you are using Ubuntu, make sure you have installed the following( Use sudo apt-get install openssh-server):***
->*openssh-server: SSH service
->*gunicorn: support gevent， WSGI Server
->*Nginx: Web Server
->*python-gevent: convert code to asyn version
->*python-jinja2
->*python-mysql.connector
->*python-mysql.connector
->*Mysql Server and Client
+**If you are using Ubuntu, make sure you have installed the following( Use sudo apt-get install openssh-server):**
+>* openssh-server: SSH service
+>* gunicorn: support gevent， WSGI Server
+>* Nginx: Web Server
+>* python-gevent: convert code to asyn version
+>* python-jinja2
+>* python-mysql.connector
+>* python-mysql.connector
+>* Mysql Server and Client
 
 
 ```bash
@@ -39,3 +39,83 @@ sudo apt-get autoclean
 sudo apt-get install mysql-client-core-5.5
 sudo apt-get install mysql-server 
 ```
+
+<p>supervisor: linux process management tool，it will restart the process if the process is aborted accidentally.</p>
+
+
+### Nginx Configuration
+
+Put this file under /etc/nginx/sites-available
+
+```bash
+server {
+    listen      80;
+
+    root       /srv/awesome/www;
+    access_log /srv/awesome/log/access_log;
+    error_log  /srv/awesome/log/error_log;
+
+    server_name you.server.address;
+
+    client_max_body_size 1m;
+
+    gzip            on;
+    gzip_min_length 1024;
+    gzip_buffers    4 8k;
+    gzip_types      text/css application/x-javascript application/json;
+
+    sendfile on;
+
+    location /favicon.ico {
+        root /srv/awesome/www;
+    }
+
+    location ~ ^\/static\/.*$ {
+        root /srv/awesome/www;
+    }
+
+    location / {
+        proxy_pass       http://127.0.0.1:9000;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+}
+
+```
+
+then run,
+
+```bash
+$ sudo ln -s /etc/nginx/sites-available/awesome .
+$ sudo /etc/init.d/nginx reload
+
+```
+Logfile is under /var/log/supervisor
+
+### Deploy
+
+Local Test: use 
+
+```bash
+python wsgiapp.py
+```
+If port 9000 is occupied, use 
+
+```bash
+netstat -ano
+netstat -aon|findstr "9000"
+tasklist|findstr "4524"
+taskkill /f  /t  /im QQ.exe
+```
+
+to release this port 9000.
+
+Use
+
+```bash
+fab build
+fab deploy
+```
+
+to rebuild and deploy, see details at https://segmentfault.com/a/1190000000497630
