@@ -14,22 +14,22 @@ tags: python
 >* Git Bash: Run scripts.
 
 **Registration**
->1.Launch a new instance, choose viture machine, here I used ubuntu 14.04 AMI. You will get a xxx.pem file after registration, keep it in a safe place, this file is the key for login, and you can not download it again if you lose it.
->2.Under Network & Security --> Security Groups --> Inbound , remenber to open port 80 by adding a new rule. (Type: TCP, Port:80), cause my app use port 80 fot listening.
->2.Both IP and DNS address will change after each restarts, so we should use elastic IP address. (TO DO)
->3.Register RDS service, put database on RDS instead of server.(TO DO)
+>1、Launch a new instance, choose viture machine, here I used ubuntu 14.04 AMI. You will get a xxx.pem file after registration, keep it in a safe place, this file is the key for login, and you can not download it again if you lose it.
+>2、Under Network & Security --> Security Groups --> Inbound , remenber to open port 80 by adding a new rule. (Type: TCP, Port:80), cause my app use port 80 fot listening.
+>2、Both IP and DNS address will change after each restarts, so we should use elastic IP address. (TO DO)
+>3、Register RDS service, put database on RDS instead of server.(TO DO)
 
 
 ### Sever Configuration
-#### Ubuntu, make sure you have installed the following( Use sudo apt-get install openssh-server):
-<p>openssh-server: SSH service</p>
-<p>gunicorn: support gevent， WSGI Server</p>
-<p>Nginx: Web Server</p>
-<p>python-gevent: 同步代码变异步协程()</p>
-<p>python-jinja2</p>
-<p>python-mysql.connector</p>
-<p>python-mysql.connector</p>
-<p>Mysql Server and Client</p>
+***If you are using Ubuntu, make sure you have installed the following( Use sudo apt-get install openssh-server):***
+>*openssh-server: SSH service
+>*gunicorn: support gevent， WSGI Server
+>*Nginx: Web Server</p>
+>*python-gevent: convert code to asyn version
+>*python-jinja2</p>
+>*python-mysql.connector
+>*python-mysql.connector
+>*Mysql Server and Client
 
 
 ```bash
@@ -41,7 +41,7 @@ sudo apt-get install mysql-client-core-5.5
 sudo apt-get install mysql-server 
 ```
 
-<p>supervisor: linux管理进程的工具，随系统的启动而启动服务，监控服务进程，如果进程意外推出会自动重启服务</p>
+<p>supervisor: linux process management tool，it will restart the process if the process is aborted accidentally.</p>
 
 
 ### Nginx Configuration
