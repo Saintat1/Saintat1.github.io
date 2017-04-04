@@ -29,10 +29,11 @@
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
             {{ content }}
+            
+            {% include comments.html %}
             {% include footer.html %}
         </div>
-        
-            {% include comments.html %}
+
     </div>
     
     {% include external.html %}
