@@ -4,6 +4,19 @@ title: Slack API in R
 date: 2017-04-10
 tags: R  
 ---
+### Preface
+It is very convenient for me to use slack to supervise the status of running program, so I developed a simple slack-r api. Once some errors are catched, I'll get a slack message send by slack bot, it is good for debuging and problem solving. If you have any suggestions, please comment below.
+
+[github page](https://github.com/Saintat1/R-SlackAPI)
+
+Below is the code, before using, fill the below part with your own *webhook_url*:
+```
+incoming_webhook_url <- "https://hooks.slack.com/services/XXXXXX/XXXX/XXXXXXXX"
+    messager.name <- "XXXXXX"
+    upload.end.point <-  "https://slack.com/api/files.upload"
+    upload.token <- "XXXX-XXXXXXXXXX-XXXXXX-XXXXXXX-XXXXXX"
+    upload.channel = ""
+```
 
 
 ```
@@ -69,7 +82,7 @@ tags: R
     messager.name <- "XXXXXX"
     upload.end.point <-  "https://slack.com/api/files.upload"
     upload.token <- "XXXX-XXXXXXXXXX-XXXXXX-XXXXXXX-XXXXXX"
-    upload.channel = "#upload-report"
+    upload.channel = ""
     ###############################################################################
     # Function Part
     ###############################################################################
