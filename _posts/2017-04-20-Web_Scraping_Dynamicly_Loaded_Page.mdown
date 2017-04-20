@@ -1,0 +1,7 @@
+---
+layout: post
+title: Web Scraping Dynamic Loaded Page
+date: 2017-04-20
+tags: R  
+---
+###Preface: Sometimes it's hard to do web scraping because: 1. You need to handel login page 2. You need to click on some button to get what you want. 3. The data in some table is dynanmic loaded, you won't get it if you ignore it's javascript file. Finally I found a way using **phantomjs** + **javascript** + **rvest(R)** to solve this problem, it's super flexible and straight forward.  
