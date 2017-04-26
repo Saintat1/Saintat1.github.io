@@ -10,7 +10,7 @@ Sometimes it's hard to do web scraping because: 1. You need to handle login page
 
 ##### 1. Download and install phantomjs
 
-PhantomJS is a headless WebKit, here we use it to open the dynamically loaded web page. You can download it from http://phantomjs.org/
+PhantomJS is a headless WebKit, here we use it to open the dynamically loaded web page. You can download it from [http://phantomjs.org/](http://phantomjs.org/)
 
 ##### 2. Configure the `scraper.js`
 
