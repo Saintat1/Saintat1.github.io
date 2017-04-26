@@ -19,7 +19,7 @@ PhantomJS is a headless WebKit, here we use it to open the dynamically loaded we
 
 2. Use `document.forms[0].submit();` to submit a form, use index to submit the specific form.
 
-3. Use document.getElementsByName("Action")[1].click() to imitate a click action, useful when you want to get content form a different tab, use index if there are multiple buttons under the same name.
+3. Use `document.getElementsByName("Action")[1].click()` to imitate a click action, useful when you want to get content form a different tab, use index if there are multiple buttons under the same name.
 
 4. You can adjust the waiting time between each section use `interval = setInterval(executeRequestsStepByStep,30000);` ,but make sure the website is fully loaded.
 
