@@ -44,9 +44,9 @@ tags: JavaScript
    - screen.height：屏幕高度，以像素为单位；
    - screen.colorDepth：返回颜色位数，如8、16、24。
 
-​	**location**
+   ​**location**
 
-​	表示当前页面的URL信息：
+   ​表示当前页面的URL信息：
 
 ```javascript
 location.href//地址
@@ -93,15 +93,15 @@ ocation.reload()//重新加载当前页面
 
    **选择：**
 
-​	```document.getElementById('test-table').getElementsByTagName('tr')```
+   ​```document.getElementById('test-table').getElementsByTagName('tr')```
 
-​	**更新：**
+   ​**更新：**
 
-​	第一种方法，修改```innerHTML```，HTML会被编码，如``` <span style="color:red">RED</span>```
+   ​第一种方法，修改```innerHTML```，HTML会被编码，如``` <span style="color:red">RED</span>```
 
-​	第二种方法，修改```innerText```, HTML不会被编码
+   ​第二种方法，修改```innerText```, HTML不会被编码
 
-​	修改CSS: 
+   ​修改CSS: 
 
 ```javascript
 var p = document.getElementById('p-id');
@@ -184,17 +184,17 @@ removed === self; // true  删除的节点储存在removed中，和self一致
    - 下拉框，```<select>```用于选择一项
    - 隐藏文本，对应的```<input type="hidden">```,用户不可见，但表单提交时会把隐藏文本发送到服务器
 
-​	**获取值**
+   ​**获取值**
 
-​	```input.value```,可以用于大部分情况。但对于复选框，需要用```checked```判断
+   ​```input.value```,可以用于大部分情况。但对于复选框，需要用```checked```判断
 
-​	**设置值**
+   ​**设置值**
 
-​	```mon.checked = true``` 
+   ​```mon.checked = true``` 
 
-​	```input.value = 'test@example.com'```
+   ​```input.value = 'test@example.com'```
 
-​	**HTML5控件**
+   ​**HTML5控件**
 
 ```javascript
 <input type="date" value="2015-07-01"> //日期选择器，value为默认时间
@@ -290,6 +290,70 @@ function checkForm() {
 </script>
 ```
 
-**操作文件**
+4. 操作文件
 
 上传文件的控件```<input type="file">```
+
+JS可以在提交表单是对文件扩展名做检查
+
+```javascript
+var f = document.getElementById('test-file-upload');
+var filename = f.value; // 文件全路径
+if (!filename || !(filename.endsWith('.jpg') || filename.endsWith('.png') || filename.endsWith('.gif'))) {
+    alert('Can only upload image file.');
+    return false;
+}
+```
+
+HTML5的File API提供了```File```和```FileReader```两个主要对象，可以获得文件信息并读取文件
+
+```javascript
+var
+    fileInput = document.getElementById('test-image-file'),
+    info = document.getElementById('test-file-info'),
+    preview = document.getElementById('test-image-preview');
+// 监听change事件:
+fileInput.addEventListener('change', function () {
+    // 清除背景图片:
+    preview.style.backgroundImage = '';
+    // 检查文件是否选择:
+    if (!fileInput.value) {
+        info.innerHTML = '没有选择文件';
+        return;
+    }
+    // 获取File引用:
+    var file = fileInput.files[0];
+    // 获取File信息:
+    info.innerHTML = '文件: ' + file.name + '<br>' +
+                     '大小: ' + file.size + '<br>' +
+                     '修改: ' + file.lastModifiedDate;
+    if (file.type !== 'image/jpeg' && file.type !== 'image/png' && file.type !== 'image/gif') {
+        alert('不是有效的图片文件!');
+        return;
+    }
+    // 读取文件:
+    var reader = new FileReader();
+    reader.onload = function(e) {
+        var
+            data = e.target.result; // 'data:image/jpeg;base64,/9j/4AAQSk...(base64编码)...'            
+        preview.style.backgroundImage = 'url(' + data + ')';
+    };
+    // 以DataURL的形式读取文件:
+    reader.readAsDataURL(file);
+});
+```
+
+5. AJAX
+
+6. jQuery
+
+   jQuery把所有函数封装在`jQuery`变量内，该变量的别名是`$`
+
+   **选择器**
+
+   ​	按id: ```var div = $('#abc')```; 结果不会返回```undefined```或者```null```, 如果是空会返回```[]```
+
+   ​	按tag: ```var ps = $('p')```;
+
+   ​	按class:``` var a = ('.red');``` 同时包含多个节点: ```var a = ('.red.green');```
+
