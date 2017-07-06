@@ -1,3 +1,9 @@
+---
+layout: post
+title: Git rebase usage
+date: 2017-07-06
+tags: Git 
+---
 #### Git Rebase Usage
 
 ##### Merge
